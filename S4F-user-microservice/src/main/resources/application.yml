@@ -1,3 +1,6 @@
+server:
+  servlet:
+    context-path: /api
 spring:
   port: ${SERVER_PORT:8080}
   jpa:
@@ -14,3 +17,15 @@ spring:
     enabled: true
     change-log: classpath:db/changelog/db.changelog-root.xml
     default-schema: public
+logging:
+  level:
+    org.springframework: ERROR
+    com.com.ferru97: INFO
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
+    file: "%d %p %c{1.} [%t] %m%n"
+
+s4f:
+  security:
+    bcryptStrength: ${BYCRYPT_STRENGTH:10}
+    bcryptRandomSeed: ${BYCRYPT_SEED:Uihu*P$F$wg6S&XYbdNW}

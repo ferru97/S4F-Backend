@@ -1,7 +1,8 @@
-package com.ferru97.s4fuser.s4f.user.microservice;
+package com.ferru97.s4f.user.microservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 public class S4FUserMicroserviceApplication {

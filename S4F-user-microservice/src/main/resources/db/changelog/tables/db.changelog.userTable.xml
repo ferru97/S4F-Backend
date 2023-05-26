@@ -13,10 +13,10 @@
             <column  name="id"  type="BIGINT"  autoIncrement="true">
                 <constraints  primaryKey="true"  nullable="false"/>
             </column>
-            <column  name="firstname"  type="VARCHAR(100)">
+            <column  name="first_name"  type="VARCHAR(100)">
                 <constraints  nullable="false"/>
             </column>
-            <column  name="lastname"  type="VARCHAR(100)">
+            <column  name="last_name"  type="VARCHAR(100)">
                 <constraints  nullable="false"/>
             </column>
             <column  name="nickname"  type="VARCHAR(50)">
@@ -31,7 +31,7 @@
             <column  name="birthday"  type="DATE">
                 <constraints  nullable="false"/>
             </column>
-            <column  name="active"  type="BOOLEAN" defaultValue="true">
+            <column  name="active"  type="BOOLEAN">
                 <constraints  nullable="false"/>
             </column>
         </createTable>
